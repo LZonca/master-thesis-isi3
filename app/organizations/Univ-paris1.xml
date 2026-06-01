@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1">
+  <customUserInfoDefinitions/>
+  <users>
+    <user userName="daniel.diaz">
+      <firstName>Daniel</firstName>
+      <lastName>Diaz</lastName>
+      <title>Mr</title>
+      <jobTitle>Enseignant-Chercheur</jobTitle>
+      <manager></manager>
+      <personalData/>
+      <professionalData>
+        <email>daniel.diaz@paris1.fr</email>
+        <phoneNumber>+33070000076</phoneNumber>
+        <faxNumber></faxNumber>
+        <building>89</building>
+        <address>Rue de Tolbiac</address>
+        <zipCode>75000</zipCode>
+        <city>Paris</city>
+        <country>France</country>
+      </professionalData>
+      <metaDatas>
+        <metaData name="Skype ID"/>
+        <metaData name="Twitter"/>
+        <metaData name="Facebook"/>
+      </metaDatas>
+      <enabled>true</enabled>
+      <password encrypted="false">bpm</password>
+    </user>
+    <user userName="rebecca.deneckere">
+      <firstName>Rebecca</firstName>
+      <lastName>Deneckère</lastName>
+      <title>Mme</title>
+      <jobTitle>Enseignante-Chercheuse</jobTitle>
+      <manager></manager>
+      <personalData/>
+      <professionalData>
+        <email>rebecca.deneckere@paris1.fr</email>
+        <phoneNumber>+33670000076</phoneNumber>
+        <faxNumber></faxNumber>
+        <building>89</building>
+        <address>Rue de Tolbiac</address>
+        <zipCode>75000</zipCode>
+        <city>Paris</city>
+        <state>IDF</state>
+        <country>France</country>
+      </professionalData>
+      <metaDatas>
+        <metaData name="Skype ID"/>
+        <metaData name="Twitter"/>
+        <metaData name="Facebook"/>
+      </metaDatas>
+      <enabled>true</enabled>
+      <password encrypted="false">bpm</password>
+    </user>
+    <user userName="ewa.lobodzinska">
+      <firstName>Ewa</firstName>
+      <lastName>Łobodzińska</lastName>
+      <title>Mme</title>
+      <jobTitle>Etudiante</jobTitle>
+      <manager></manager>
+      <personalData/>
+      <professionalData>
+        <email>ewa.lobodzinska@etu-paris1.fr</email>
+        <phoneNumber>+33676767676</phoneNumber>
+        <faxNumber></faxNumber>
+        <building>67</building>
+        <address>Rue de Pologne</address>
+        <zipCode>75000</zipCode>
+        <city>Paris</city>
+        <state>IDF</state>
+        <country>France</country>
+      </professionalData>
+      <metaDatas>
+        <metaData name="Skype ID"/>
+        <metaData name="Twitter"/>
+        <metaData name="Facebook"/>
+      </metaDatas>
+      <enabled>true</enabled>
+      <password encrypted="false">bpm</password>
+    </user>
+    <user userName="leo.zonca">
+      <firstName>Léo</firstName>
+      <lastName>Zonca</lastName>
+      <title>Mr</title>
+      <jobTitle>Etudiant</jobTitle>
+      <manager></manager>
+      <personalData/>
+      <professionalData>
+        <email>leo.zonca@etu-paris1.fr</email>
+        <phoneNumber>+33767676767</phoneNumber>
+        <faxNumber></faxNumber>
+        <building>67</building>
+        <address>Rue de Lyon</address>
+        <zipCode>69000</zipCode>
+        <city>Lyon</city>
+        <state>Auvergne-Rhône-Alpes</state>
+        <country>France</country>
+      </professionalData>
+      <metaDatas>
+        <metaData name="Skype ID"/>
+        <metaData name="Twitter"/>
+        <metaData name="Facebook"/>
+      </metaDatas>
+      <enabled>true</enabled>
+      <password encrypted="false">bpm</password>
+    </user>
+  </users>
+  <roles/>
+  <groups/>
+  <memberships/>
+</organization:Organization>
