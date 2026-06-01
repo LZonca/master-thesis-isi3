@@ -105,8 +105,40 @@
       <enabled>true</enabled>
       <password encrypted="false">bpm</password>
     </user>
+    <user userName="User1">
+      <firstName>Nicolas</firstName>
+      <lastName>Herbaut</lastName>
+      <title>Mr</title>
+      <jobTitle>Enseignant-Chercheur</jobTitle>
+      <personalData/>
+      <professionalData>
+        <email>rebecca.deneckere@paris1.fr</email>
+        <room>67</room>
+        <address>rue de bordeaux</address>
+        <zipCode>33000</zipCode>
+        <city>Bordeaux</city>
+        <state>Gironde</state>
+        <country>France</country>
+      </professionalData>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
   </users>
-  <roles/>
-  <groups/>
+  <roles>
+    <role name="Tutor">
+      <displayName>Tuteur</displayName>
+    </role>
+  </roles>
+  <groups>
+    <group name="Student" parentPath="/Paris1">
+      <displayName>Etudiant</displayName>
+    </group>
+    <group name="Teacher" parentPath="/Paris1">
+      <displayName>Enseignant-Chercheur</displayName>
+    </group>
+    <group name="Paris1">
+      <displayName>University Paris 1</displayName>
+    </group>
+  </groups>
   <memberships/>
 </organization:Organization>
