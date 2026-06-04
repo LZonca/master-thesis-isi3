@@ -58,7 +58,7 @@
       <lastName>Łobodzińska</lastName>
       <title>Mme</title>
       <jobTitle>Etudiante</jobTitle>
-      <manager></manager>
+      <manager>rebecca.deneckere</manager>
       <personalData/>
       <professionalData>
         <email>ewa.lobodzinska@etu-paris1.fr</email>
@@ -84,7 +84,7 @@
       <lastName>Zonca</lastName>
       <title>Mr</title>
       <jobTitle>Etudiant</jobTitle>
-      <manager></manager>
+      <manager>nicolas.herbaut</manager>
       <personalData/>
       <professionalData>
         <email>leo.zonca@etu-paris1.fr</email>
@@ -105,14 +105,14 @@
       <enabled>true</enabled>
       <password encrypted="false">bpm</password>
     </user>
-    <user userName="User1">
+    <user userName="nicolas.herbaut">
       <firstName>Nicolas</firstName>
       <lastName>Herbaut</lastName>
       <title>Mr</title>
       <jobTitle>Enseignant-Chercheur</jobTitle>
       <personalData/>
       <professionalData>
-        <email>rebecca.deneckere@paris1.fr</email>
+        <email>nicolas.herbaut@paris1.fr</email>
         <room>67</room>
         <address>rue de bordeaux</address>
         <zipCode>33000</zipCode>
@@ -125,8 +125,11 @@
     </user>
   </users>
   <roles>
-    <role name="Tutor">
-      <displayName>Tuteur</displayName>
+    <role name="Supervisor">
+      <displayName>Supervisor</displayName>
+    </role>
+    <role name="Student">
+      <displayName>Student</displayName>
     </role>
   </roles>
   <groups>
@@ -140,5 +143,36 @@
       <displayName>University Paris 1</displayName>
     </group>
   </groups>
-  <memberships/>
+  <memberships>
+    <membership>
+      <userName>ewa.lobodzinska</userName>
+      <roleName>Student</roleName>
+      <groupName>Student</groupName>
+      <groupParentPath>/Paris1</groupParentPath>
+    </membership>
+    <membership>
+      <userName>leo.zonca</userName>
+      <roleName>Student</roleName>
+      <groupName>Student</groupName>
+      <groupParentPath>/Paris1</groupParentPath>
+    </membership>
+    <membership>
+      <userName>nicolas.herbaut</userName>
+      <roleName>Supervisor</roleName>
+      <groupName>Teacher</groupName>
+      <groupParentPath>/Paris1</groupParentPath>
+    </membership>
+    <membership>
+      <userName>rebecca.deneckere</userName>
+      <roleName>Supervisor</roleName>
+      <groupName>Teacher</groupName>
+      <groupParentPath>/Paris1</groupParentPath>
+    </membership>
+    <membership>
+      <userName>daniel.diaz</userName>
+      <roleName>Supervisor</roleName>
+      <groupName>Teacher</groupName>
+      <groupParentPath>/Paris1</groupParentPath>
+    </membership>
+  </memberships>
 </organization:Organization>
