@@ -12,25 +12,34 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_9kYVmF4NEfGSB_ofTbf8Ow" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_9kYVmV4NEfGSB_ofTbf8Ow" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_9kYVml4NEfGSB_ofTbf8Ow" name="" content="" returnTypeFixed="true"/>
-          <operations xmi:type="expression:Operation" xmi:id="_kMj38F-dEfG4r5Ap2BJ86w">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_kMj38V-dEfG4r5Ap2BJ86w" name="thesis" content="thesis" type="TYPE_VARIABLE" returnType="hungry.hippos.model.MasterThesis">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_kMj38l-dEfG4r5Ap2BJ86w" name="thesis" dataType="_9kYVxF4NEfGSB_ofTbf8Ow" className="hungry.hippos.model.MasterThesis"/>
+          <operations xmi:type="expression:Operation" xmi:id="_eq999GBpEfGV6uQhRy5U3Q">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_eq999WBpEfGV6uQhRy5U3Q" name="thesis" content="thesis" type="TYPE_VARIABLE" returnType="hungry.hippos.model.MasterThesis">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_eq999mBpEfGV6uQhRy5U3Q" name="thesis" dataType="_9kYVxF4NEfGSB_ofTbf8Ow" className="hungry.hippos.model.MasterThesis"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_kMj381-dEfG4r5Ap2BJ86w" name="thesisInput.title" content="thesisInput?.title" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_kMj39F-dEfG4r5Ap2BJ86w" name="thesisInput" type="COMPLEX" createMode="false"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_eq9992BpEfGV6uQhRy5U3Q" name="thesisInput.title" content="thesisInput?.title" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_eq-lAGBpEfGV6uQhRy5U3Q" name="thesisInput" type="COMPLEX" createMode="false"/>
             </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_kMj39V-dEfG4r5Ap2BJ86w" type="JAVA_METHOD" expression="setTitle">
+            <operator xmi:type="expression:Operator" xmi:id="_eq-lAWBpEfGV6uQhRy5U3Q" type="JAVA_METHOD" expression="setTitle">
               <inputTypes>java.lang.String</inputTypes>
             </operator>
           </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_kMj39l-dEfG4r5Ap2BJ86w">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_kMj391-dEfG4r5Ap2BJ86w" name="thesis" content="thesis" type="TYPE_VARIABLE" returnType="hungry.hippos.model.MasterThesis">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_kMj3-F-dEfG4r5Ap2BJ86w" name="thesis" dataType="_9kYVxF4NEfGSB_ofTbf8Ow" className="hungry.hippos.model.MasterThesis"/>
+          <operations xmi:type="expression:Operation" xmi:id="_eq-lAmBpEfGV6uQhRy5U3Q">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_eq-lA2BpEfGV6uQhRy5U3Q" name="thesis" content="thesis" type="TYPE_VARIABLE" returnType="hungry.hippos.model.MasterThesis">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_eq-lBGBpEfGV6uQhRy5U3Q" name="thesis" dataType="_9kYVxF4NEfGSB_ofTbf8Ow" className="hungry.hippos.model.MasterThesis"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_kMj3-V-dEfG4r5Ap2BJ86w" name="thesisInput.plan" content="thesisInput?.plan" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_kMj3-l-dEfG4r5Ap2BJ86w" name="thesisInput" type="COMPLEX" createMode="false"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_eq-lBWBpEfGV6uQhRy5U3Q" name="thesisInput.plan" content="thesisInput?.plan" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_eq-lBmBpEfGV6uQhRy5U3Q" name="thesisInput" type="COMPLEX" createMode="false"/>
             </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_kMj3-1-dEfG4r5Ap2BJ86w" type="JAVA_METHOD" expression="setPlan">
+            <operator xmi:type="expression:Operator" xmi:id="_eq-lB2BpEfGV6uQhRy5U3Q" type="JAVA_METHOD" expression="setPlan">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_eq-lCGBpEfGV6uQhRy5U3Q">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_eq-lCWBpEfGV6uQhRy5U3Q" name="thesis" content="thesis" type="TYPE_VARIABLE" returnType="hungry.hippos.model.MasterThesis">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_eq-lCmBpEfGV6uQhRy5U3Q" name="thesis" dataType="_9kYVxF4NEfGSB_ofTbf8Ow" className="hungry.hippos.model.MasterThesis"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_eq-lC2BpEfGV6uQhRy5U3Q" name="thesisInput.status" content="return &quot;A valider&quot;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT"/>
+            <operator xmi:type="expression:Operator" xmi:id="_eq-lDWBpEfGV6uQhRy5U3Q" type="JAVA_METHOD" expression="setStatus">
               <inputTypes>java.lang.String</inputTypes>
             </operator>
           </operations>
@@ -40,19 +49,13 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_9kYVnl4NEfGSB_ofTbf8Ow" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_9kYVn14NEfGSB_ofTbf8Ow" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_9kYVoF4NEfGSB_ofTbf8Ow">
-            <targetForm xmi:type="expression:Expression" xmi:id="_POTM8F-rEfGmh_yEwZPv3w" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_SW5PIGBnEfGvUMoe0_KxeQ" name="newForm1" content="168a6f1c-cac3-4a80-9290-e37249149158" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_9kYVol4NEfGSB_ofTbf8Ow">
-            <inputs xmi:type="process:ContractInput" xmi:id="_kMhbsF-dEfG4r5Ap2BJ86w" name="thesisInput" type="COMPLEX" dataReference="thesis" createMode="false">
-              <inputs xmi:type="process:ContractInput" xmi:id="_kMhbsV-dEfG4r5Ap2BJ86w" name="title" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_kMhbsl-dEfG4r5Ap2BJ86w" name="plan" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_eq998GBpEfGV6uQhRy5U3Q" name="thesisInput" type="COMPLEX" dataReference="thesis" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_eq998WBpEfGV6uQhRy5U3Q" name="title" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_eq998mBpEfGV6uQhRy5U3Q" name="plan" createMode="false"/>
             </inputs>
-            <constraints xmi:type="process:ContractConstraint" xmi:id="_kMjQ4F-dEfG4r5Ap2BJ86w" expression="thesisInput?.title != null" errorMessage="title is mandatory for MasterThesis" name="mandatory_thesisInput_title">
-              <inputNames>thesisInput</inputNames>
-            </constraints>
-            <constraints xmi:type="process:ContractConstraint" xmi:id="_kMjQ4V-dEfG4r5Ap2BJ86w" expression="thesisInput?.plan != null" errorMessage="plan is mandatory for MasterThesis" name="mandatory_thesisInput_plan">
-              <inputNames>thesisInput</inputNames>
-            </constraints>
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_9kYVo14NEfGSB_ofTbf8Ow" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
@@ -60,15 +63,42 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_7JV9wV-SEfG4r5Ap2BJ86w" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_7JV9wF-SEfG4r5Ap2BJ86w" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_7JV9wl-SEfG4r5Ap2BJ86w" name="" content="" returnTypeFixed="true"/>
+          <operations xmi:type="expression:Operation" xmi:id="_kZpMc2BzEfGsIJaHqI4HRA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_kZpMdGBzEfGsIJaHqI4HRA" name="thesis" content="thesis" type="TYPE_VARIABLE" returnType="hungry.hippos.model.MasterThesis">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_kZpMdWBzEfGsIJaHqI4HRA" name="thesis" dataType="_9kYVxF4NEfGSB_ofTbf8Ow" className="hungry.hippos.model.MasterThesis"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_kZpMdmBzEfGsIJaHqI4HRA" name="thesisInput.title" content="thesisInput?.title" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_kZpzgGBzEfGsIJaHqI4HRA" name="thesisInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_kZpzgWBzEfGsIJaHqI4HRA" type="JAVA_METHOD" expression="setTitle">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_kZpzgmBzEfGsIJaHqI4HRA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_kZpzg2BzEfGsIJaHqI4HRA" name="thesis" content="thesis" type="TYPE_VARIABLE" returnType="hungry.hippos.model.MasterThesis">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_kZpzhGBzEfGsIJaHqI4HRA" name="thesis" dataType="_9kYVxF4NEfGSB_ofTbf8Ow" className="hungry.hippos.model.MasterThesis"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_kZpzhWBzEfGsIJaHqI4HRA" name="thesisInput.plan" content="thesisInput?.plan" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_kZpzhmBzEfGsIJaHqI4HRA" name="thesisInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_kZpzh2BzEfGsIJaHqI4HRA" type="JAVA_METHOD" expression="setPlan">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_7JV9w1-SEfG4r5Ap2BJ86w" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_7JV9xF-SEfG4r5Ap2BJ86w" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_7JV9xV-SEfG4r5Ap2BJ86w" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_7JV9x1-SEfG4r5Ap2BJ86w" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_7JV9xl-SEfG4r5Ap2BJ86w" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_8ZORSV-SEfG4r5Ap2BJ86w">
-            <targetForm xmi:type="expression:Expression" xmi:id="_POTM8V-rEfGmh_yEwZPv3w" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_WIs2YGBzEfGsIJaHqI4HRA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
-          <contract xmi:type="process:Contract" xmi:id="_8ZORSF-SEfG4r5Ap2BJ86w"/>
+          <contract xmi:type="process:Contract" xmi:id="_8ZORSF-SEfG4r5Ap2BJ86w">
+            <inputs xmi:type="process:ContractInput" xmi:id="_kZpMcGBzEfGsIJaHqI4HRA" name="thesisInput" type="COMPLEX" dataReference="thesis" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_kZpMcWBzEfGsIJaHqI4HRA" name="title" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_kZpMcmBzEfGsIJaHqI4HRA" name="plan" createMode="false"/>
+            </inputs>
+          </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_8ZORS1-SEfG4r5Ap2BJ86w" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:Task" xmi:id="_D4nToF-WEfG4r5Ap2BJ86w" name="Work on the thesis report" outgoing="_au_OcF-WEfG4r5Ap2BJ86w" incoming="_ObLI4V-VEfG4r5Ap2BJ86w" overrideActorsOfTheLane="false">
@@ -81,7 +111,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_ObKh2F-VEfG4r5Ap2BJ86w" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_ObKh11-VEfG4r5Ap2BJ86w" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_D4nTql-WEfG4r5Ap2BJ86w">
-            <targetForm xmi:type="expression:Expression" xmi:id="_POTM8l-rEfGmh_yEwZPv3w" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_WIs2YWBzEfGsIJaHqI4HRA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_D4nTqV-WEfG4r5Ap2BJ86w"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_D4nTrF-WEfG4r5Ap2BJ86w" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -96,7 +126,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_au-nZ1-WEfG4r5Ap2BJ86w" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_au-nZl-WEfG4r5Ap2BJ86w" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_bm5G2l-WEfG4r5Ap2BJ86w">
-            <targetForm xmi:type="expression:Expression" xmi:id="_POTM81-rEfGmh_yEwZPv3w" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_WIs2YmBzEfGsIJaHqI4HRA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_bm5G2V-WEfG4r5Ap2BJ86w"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_bm5G3F-WEfG4r5Ap2BJ86w" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -111,7 +141,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_JbJSp1-XEfG4r5Ap2BJ86w" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_JbJSpl-XEfG4r5Ap2BJ86w" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_L0Jxal-XEfG4r5Ap2BJ86w">
-            <targetForm xmi:type="expression:Expression" xmi:id="_POTM9F-rEfGmh_yEwZPv3w" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_WIs2Y2BzEfGsIJaHqI4HRA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_L0JxaV-XEfG4r5Ap2BJ86w"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_L0JxbF-XEfG4r5Ap2BJ86w" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -129,45 +159,18 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_Xf4K8V-SEfG4r5Ap2BJ86w" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_Xf4K8F-SEfG4r5Ap2BJ86w" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_Xf4K8l-SEfG4r5Ap2BJ86w" name="" content="" returnTypeFixed="true"/>
-          <operations xmi:type="expression:Operation" xmi:id="_dgi5p1-iEfGyVeaeO3TwfA">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_dgi5qF-iEfGyVeaeO3TwfA" name="thesis" content="thesis" type="TYPE_VARIABLE" returnType="hungry.hippos.model.MasterThesis">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_dgi5qV-iEfGyVeaeO3TwfA" name="thesis" dataType="_9kYVxF4NEfGSB_ofTbf8Ow" className="hungry.hippos.model.MasterThesis"/>
+          <operations xmi:type="expression:Operation" xmi:id="_FYHVcGBwEfGvnJC4xuWT6A">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_FYHVcWBwEfGvnJC4xuWT6A" name="thesis" content="thesis" type="TYPE_VARIABLE" returnType="hungry.hippos.model.MasterThesis">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_FxXi8GBwEfGvnJC4xuWT6A" name="thesis" dataType="_9kYVxF4NEfGSB_ofTbf8Ow" className="hungry.hippos.model.MasterThesis"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_dgi5ql-iEfGyVeaeO3TwfA" name="thesisInput.title" content="thesisInput?.title" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_dgi5q1-iEfGyVeaeO3TwfA" name="thesisInput" type="COMPLEX" createMode="false"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_FYHVcmBwEfGvnJC4xuWT6A" name="newScript()" content="return isApproved ? &quot;Plan valide&quot; : &quot;Plan a corriger&quot;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_J9jPgGBwEfGvnJC4xuWT6A" name="isApproved" type="BOOLEAN">
+                <mapping xmi:type="process:ContractInputMapping" xmi:id="_J9jPgWBwEfGvnJC4xuWT6A"/>
+              </referencedElements>
             </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_dgi5rF-iEfGyVeaeO3TwfA" type="JAVA_METHOD" expression="setTitle">
+            <operator xmi:type="expression:Operator" xmi:id="_FYHVc2BwEfGvnJC4xuWT6A" type="JAVA_METHOD" expression="setStatus">
               <inputTypes>java.lang.String</inputTypes>
             </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_dgi5rV-iEfGyVeaeO3TwfA">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_dgi5rl-iEfGyVeaeO3TwfA" name="thesis" content="thesis" type="TYPE_VARIABLE" returnType="hungry.hippos.model.MasterThesis">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_dgi5r1-iEfGyVeaeO3TwfA" name="thesis" dataType="_9kYVxF4NEfGSB_ofTbf8Ow" className="hungry.hippos.model.MasterThesis"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_dgi5sF-iEfGyVeaeO3TwfA" name="thesisInput.plan" content="thesisInput?.plan" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_dgi5sV-iEfGyVeaeO3TwfA" name="thesisInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_dgi5sl-iEfGyVeaeO3TwfA" type="JAVA_METHOD" expression="setPlan">
-              <inputTypes>java.lang.String</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_dgi5s1-iEfGyVeaeO3TwfA">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_dgi5tF-iEfGyVeaeO3TwfA" name="thesis" content="thesis" type="TYPE_VARIABLE" returnType="hungry.hippos.model.MasterThesis">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_dgi5tV-iEfGyVeaeO3TwfA" name="thesis" dataType="_9kYVxF4NEfGSB_ofTbf8Ow" className="hungry.hippos.model.MasterThesis"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_dgi5tl-iEfGyVeaeO3TwfA" name="thesisInput.supervisorUsername" content="thesisInput?.supervisorUsername" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_dgi5t1-iEfGyVeaeO3TwfA" name="thesisInput" type="COMPLEX" createMode="false"/>
-            </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_dgi5uF-iEfGyVeaeO3TwfA" type="JAVA_METHOD" expression="setSupervisorUsername">
-              <inputTypes>java.lang.String</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_fP9o0F-iEfGyVeaeO3TwfA">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_fP9o0V-iEfGyVeaeO3TwfA" name="thesis" content="thesis" type="TYPE_VARIABLE" returnType="hungry.hippos.model.MasterThesis">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_fz6DYF-iEfGyVeaeO3TwfA" name="thesis" dataType="_9kYVxF4NEfGSB_ofTbf8Ow" className="hungry.hippos.model.MasterThesis"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_fP9o0l-iEfGyVeaeO3TwfA" name="newScript()" content="return &quot;PLAN_SUBMITTED&quot;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="hungry.hippos.model.MasterThesis"/>
-            <operator xmi:type="expression:Operator" xmi:id="_fP9o01-iEfGyVeaeO3TwfA" type="ASSIGNMENT"/>
           </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_Xf4K81-SEfG4r5Ap2BJ86w" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_Xf4K9F-SEfG4r5Ap2BJ86w" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -175,23 +178,12 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_Xf4K91-SEfG4r5Ap2BJ86w" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_Xf4K9l-SEfG4r5Ap2BJ86w" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_Zi06KV-SEfG4r5Ap2BJ86w">
-            <targetForm xmi:type="expression:Expression" xmi:id="_POTM9V-rEfGmh_yEwZPv3w" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_WIs2ZGBzEfGsIJaHqI4HRA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_Zi06KF-SEfG4r5Ap2BJ86w">
-            <inputs xmi:type="process:ContractInput" xmi:id="_dgi5oF-iEfGyVeaeO3TwfA" name="thesisInput" type="COMPLEX" dataReference="thesis" createMode="false">
-              <inputs xmi:type="process:ContractInput" xmi:id="_dgi5oV-iEfGyVeaeO3TwfA" name="title" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_dgi5ol-iEfGyVeaeO3TwfA" name="plan" createMode="false"/>
-              <inputs xmi:type="process:ContractInput" xmi:id="_dgi5o1-iEfGyVeaeO3TwfA" name="supervisorUsername" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_zaMXUGBvEfGvnJC4xuWT6A" name="isApproved" type="BOOLEAN">
+              <mapping xmi:type="process:ContractInputMapping" xmi:id="_zaMXUWBvEfGvnJC4xuWT6A"/>
             </inputs>
-            <constraints xmi:type="process:ContractConstraint" xmi:id="_dgi5pF-iEfGyVeaeO3TwfA" expression="thesisInput?.title != null" errorMessage="title is mandatory for MasterThesis" name="mandatory_thesisInput_title">
-              <inputNames>thesisInput</inputNames>
-            </constraints>
-            <constraints xmi:type="process:ContractConstraint" xmi:id="_dgi5pV-iEfGyVeaeO3TwfA" expression="thesisInput?.plan != null" errorMessage="plan is mandatory for MasterThesis" name="mandatory_thesisInput_plan">
-              <inputNames>thesisInput</inputNames>
-            </constraints>
-            <constraints xmi:type="process:ContractConstraint" xmi:id="_dgi5pl-iEfGyVeaeO3TwfA" expression="thesisInput?.supervisorUsername != null" errorMessage="supervisorUsername is mandatory for MasterThesis" name="mandatory_thesisInput_supervisorUsername">
-              <inputNames>thesisInput</inputNames>
-            </constraints>
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_Zi06K1-SEfG4r5Ap2BJ86w" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
@@ -200,19 +192,34 @@
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_0wiooV-SEfG4r5Ap2BJ86w" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_0wioo1-SEfG4r5Ap2BJ86w" name="" content="" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:Task" xmi:id="_gVHJcF-WEfG4r5Ap2BJ86w" name="Send comments on the plan" outgoing="_6QX8IF-XEfG4r5Ap2BJ86w" incoming="_iOf0UF-TEfG4r5Ap2BJ86w" overrideActorsOfTheLane="false">
+        <elements xmi:type="process:Task" xmi:id="_gVHJcF-WEfG4r5Ap2BJ86w" name="Send comments on the plan" outgoing="_6QX8IF-XEfG4r5Ap2BJ86w" incoming="_iOf0UF-TEfG4r5Ap2BJ86w" actor="_Car9MF4OEfGSB_ofTbf8Ow" overrideActorsOfTheLane="false">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_iOemMl-TEfG4r5Ap2BJ86w" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_iOemMV-TEfG4r5Ap2BJ86w" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_iOemM1-TEfG4r5Ap2BJ86w" name="" content="" returnTypeFixed="true"/>
+          <operations xmi:type="expression:Operation" xmi:id="_3GhfIGBvEfGvnJC4xuWT6A">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_3GhfIWBvEfGvnJC4xuWT6A" name="thesis" content="thesis" type="TYPE_VARIABLE" returnType="hungry.hippos.model.MasterThesis">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_3GhfImBvEfGvnJC4xuWT6A" name="thesis" dataType="_9kYVxF4NEfGSB_ofTbf8Ow" className="hungry.hippos.model.MasterThesis"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_3GhfI2BvEfGvnJC4xuWT6A" name="thesisInput.planComments" content="thesisInput?.planComments" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_3GhfJGBvEfGvnJC4xuWT6A" name="thesisInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_3GhfJWBvEfGvnJC4xuWT6A" type="JAVA_METHOD" expression="setPlanComments">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_iOemNF-TEfG4r5Ap2BJ86w" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_iOemNV-TEfG4r5Ap2BJ86w" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_iOemNl-TEfG4r5Ap2BJ86w" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_iOemOF-TEfG4r5Ap2BJ86w" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_iOemN1-TEfG4r5Ap2BJ86w" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_gVHJel-WEfG4r5Ap2BJ86w">
-            <targetForm xmi:type="expression:Expression" xmi:id="_POTM9l-rEfGmh_yEwZPv3w" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_WIs2ZWBzEfGsIJaHqI4HRA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
-          <contract xmi:type="process:Contract" xmi:id="_gVHJeV-WEfG4r5Ap2BJ86w"/>
+          <contract xmi:type="process:Contract" xmi:id="_gVHJeV-WEfG4r5Ap2BJ86w">
+            <inputs xmi:type="process:ContractInput" xmi:id="_3Gfp8GBvEfGvnJC4xuWT6A" name="thesisInput" type="COMPLEX" dataReference="thesis" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_3Gfp8WBvEfGvnJC4xuWT6A" name="planComments" createMode="false"/>
+            </inputs>
+          </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_gVHJfF-WEfG4r5Ap2BJ86w" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:Task" xmi:id="_ttCM0F-WEfG4r5Ap2BJ86w" name="Review the Thesis Report" outgoing="_wqh4sV-WEfG4r5Ap2BJ86w" incoming="_rarvsF-WEfG4r5Ap2BJ86w _KLrXsF-XEfG4r5Ap2BJ86w" overrideActorsOfTheLane="false">
@@ -225,7 +232,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_rarIp1-WEfG4r5Ap2BJ86w" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_rarIpl-WEfG4r5Ap2BJ86w" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_ttCM2l-WEfG4r5Ap2BJ86w">
-            <targetForm xmi:type="expression:Expression" xmi:id="_POTM91-rEfGmh_yEwZPv3w" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_WIs2ZmBzEfGsIJaHqI4HRA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_ttCM2V-WEfG4r5Ap2BJ86w"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_ttCM3F-WEfG4r5Ap2BJ86w" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -245,7 +252,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_BU7ZcV-XEfG4r5Ap2BJ86w" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_BU7ZcF-XEfG4r5Ap2BJ86w" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_D6a1CV-XEfG4r5Ap2BJ86w">
-            <targetForm xmi:type="expression:Expression" xmi:id="_POTM-F-rEfGmh_yEwZPv3w" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_WIs2Z2BzEfGsIJaHqI4HRA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_D6a1CF-XEfG4r5Ap2BJ86w"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_D6a1C1-XEfG4r5Ap2BJ86w" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -342,21 +349,22 @@
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_ssXSoV-ZEfG4r5Ap2BJ86w" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_ssXSo1-ZEfG4r5Ap2BJ86w" name="" content="" returnTypeFixed="true"/>
         </elements>
-        <filters xmi:type="process:ActorFilter" xmi:id="_fgDEgF-oEfGmh_yEwZPv3w" name="tuteur" definitionId="bonita-actorfilter-user-manager" definitionVersion="1.0.0">
-          <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_fgDrkF-oEfGmh_yEwZPv3w" definitionId="bonita-actorfilter-user-manager" version="1.0.0">
-            <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_fgDrkV-oEfGmh_yEwZPv3w" key="userId">
-              <expression xmi:type="expression:Expression" xmi:id="_fgDrkl-oEfGmh_yEwZPv3w" name="thesis" content="thesis" type="TYPE_VARIABLE" returnType="hungry.hippos.model.MasterThesis" returnTypeFixed="true">
-                <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_fgDrk1-oEfGmh_yEwZPv3w" name="thesis" dataType="_9kYVxF4NEfGSB_ofTbf8Ow" className="hungry.hippos.model.MasterThesis"/>
+        <filters xmi:type="process:ActorFilter" xmi:id="_pUoVMGByEfGsIJaHqI4HRA" name="Tutor" definitionId="bonita-actorfilter-user-manager" definitionVersion="1.0.0">
+          <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_pUo8QGByEfGsIJaHqI4HRA" definitionId="bonita-actorfilter-user-manager" version="1.0.0">
+            <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_pUo8QWByEfGsIJaHqI4HRA" key="userId">
+              <expression xmi:type="expression:Expression" xmi:id="_pUo8QmByEfGsIJaHqI4HRA" name="userId()" content="import org.bonitasoft.engine.bpm.flownode.ArchivedHumanTaskInstance&#xD;&#xA;import org.bonitasoft.engine.bpm.flownode.ArchivedHumanTaskInstanceSearchDescriptor&#xD;&#xA;import org.bonitasoft.engine.search.SearchOptionsBuilder&#xD;&#xA;import org.bonitasoft.engine.search.SearchResult&#xD;&#xA;&#xD;&#xA; def taskName = 'Prepare title and the plan'&#xD;&#xA;&#xD;&#xA; final SearchOptionsBuilder searchOptionsBuilder = new SearchOptionsBuilder(0, 1)&#xD;&#xA; .filter(ArchivedHumanTaskInstanceSearchDescriptor.PARENT_PROCESS_INSTANCE_ID, processInstanceId)&#xD;&#xA; .filter(ArchivedHumanTaskInstanceSearchDescriptor.NAME, taskName).filter(ArchivedHumanTaskInstanceSearchDescriptor.TERMINAL, true)&#xD;&#xA;&#xD;&#xA; SearchResult&lt;ArchivedHumanTaskInstance> searchResult = apiAccessor.processAPI.searchArchivedHumanTasks(searchOptionsBuilder.done())&#xD;&#xA;&#xD;&#xA; final List&lt;ArchivedHumanTaskInstance> tasks = searchResult.result&#xD;&#xA;&#xD;&#xA; tasks.first().executedBy" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long" returnTypeFixed="true">
+                <referencedElements xmi:type="expression:Expression" xmi:id="_U54S0GBzEfGsIJaHqI4HRA" name="processInstanceId" content="processInstanceId" type="TYPE_ENGINE_CONSTANT" returnType="java.lang.Long"/>
+                <referencedElements xmi:type="expression:Expression" xmi:id="_U54S0WBzEfGsIJaHqI4HRA" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="org.bonitasoft.engine.api.APIAccessor"/>
               </expression>
             </parameters>
           </configuration>
         </filters>
       </elements>
-      <data xmi:type="process:BusinessObjectData" xmi:id="_Zg9Q4F-dEfG4r5Ap2BJ86w" name="thesis" dataType="_9kYVxF4NEfGSB_ofTbf8Ow" className="hungry.hippos.model.MasterThesis">
-        <defaultValue xmi:type="expression:Expression" xmi:id="_Zg9Q4V-dEfG4r5Ap2BJ86w" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
+      <data xmi:type="process:BusinessObjectData" xmi:id="_W5gpQGBoEfGV6uQhRy5U3Q" name="thesis" dataType="_9kYVxF4NEfGSB_ofTbf8Ow" className="hungry.hippos.model.MasterThesis">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_W5gpQWBoEfGV6uQhRy5U3Q" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_9kYVpF4NEfGSB_ofTbf8Ow">
-        <targetForm xmi:type="expression:Expression" xmi:id="_POTM-V-rEfGmh_yEwZPv3w" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_WIs2aGBzEfGsIJaHqI4HRA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_9kYVpl4NEfGSB_ofTbf8Ow">
         <targetForm xmi:type="expression:Expression" xmi:id="_9kYVp14NEfGSB_ofTbf8Ow" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -367,11 +375,11 @@
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_0wjPtF-SEfG4r5Ap2BJ86w" target="_1G9kkF-SEfG4r5Ap2BJ86w" source="_Zi0TEF-SEfG4r5Ap2BJ86w">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_0wj2wF-SEfG4r5Ap2BJ86w"/>
-        <condition xmi:type="expression:Expression" xmi:id="_0wj2wV-SEfG4r5Ap2BJ86w" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <condition xmi:type="expression:Expression" xmi:id="_0wj2wV-SEfG4r5Ap2BJ86w" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_iOf0UF-TEfG4r5Ap2BJ86w" name="No" target="_gVHJcF-WEfG4r5Ap2BJ86w" source="_1G9kkF-SEfG4r5Ap2BJ86w" isDefault="true">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_iOf0UV-TEfG4r5Ap2BJ86w"/>
-        <condition xmi:type="expression:Expression" xmi:id="_iOf0Ul-TEfG4r5Ap2BJ86w" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <condition xmi:type="expression:Expression" xmi:id="_iOf0Ul-TEfG4r5Ap2BJ86w" name="Plan a corriger" content="Plan a corriger" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_yKKKUF-UEfG4r5Ap2BJ86w" target="_Zi0TEF-SEfG4r5Ap2BJ86w" source="_8ZNqMF-SEfG4r5Ap2BJ86w">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_yKKKUV-UEfG4r5Ap2BJ86w"/>
@@ -383,7 +391,7 @@
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_ObLI4V-VEfG4r5Ap2BJ86w" name="Yes" target="_D4nToF-WEfG4r5Ap2BJ86w" source="_1G9kkF-SEfG4r5Ap2BJ86w">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_ObLI4l-VEfG4r5Ap2BJ86w"/>
-        <condition xmi:type="expression:Expression" xmi:id="_ObLI41-VEfG4r5Ap2BJ86w" name="false" content="false" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <condition xmi:type="expression:Expression" xmi:id="_ObLI41-VEfG4r5Ap2BJ86w" name="Plan valide" content="Plan valide" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_au_OcF-WEfG4r5Ap2BJ86w" target="_bm5G0F-WEfG4r5Ap2BJ86w" source="_D4nToF-WEfG4r5Ap2BJ86w">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_au_OcV-WEfG4r5Ap2BJ86w"/>
