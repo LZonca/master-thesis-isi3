@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "a20a247c-ec7c-47a1-a68e-011995287adf",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1781611442595,
+  "lastUpdate" : 1781612252566,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -652,7 +652,7 @@
       "type" : "expression",
       "value" : [
         "return {",
-        "\tisApproved: $data.formInput.isApproved",
+        "\tisThesisApproved: $data.formInput.isThesisApproved",
         "}"
       ],
       "exposed" : false
