@@ -123,6 +123,34 @@
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
+    <user userName="hector.moreau">
+      <firstName>Hector</firstName>
+      <lastName>Moreau</lastName>
+      <title>Mr</title>
+      <jobTitle>Etudiant</jobTitle>
+      <manager>nicolas.herbaut</manager>
+      <personalData>
+        <email></email>
+      </personalData>
+      <professionalData>
+        <email>hector.moreau@etu-paris1.fr</email>
+        <country>France</country>
+      </professionalData>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="lou.cartier">
+      <firstName>Lou</firstName>
+      <lastName>Cartier</lastName>
+      <title>Mme</title>
+      <manager>daniel.diaz</manager>
+      <personalData/>
+      <professionalData>
+        <email>lou.cartier@etu-paris1.fr</email>
+      </professionalData>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
   </users>
   <roles>
     <role name="Supervisor">
@@ -172,6 +200,18 @@
       <userName>daniel.diaz</userName>
       <roleName>Supervisor</roleName>
       <groupName>Teacher</groupName>
+      <groupParentPath>/Paris1</groupParentPath>
+    </membership>
+    <membership>
+      <userName>hector.moreau</userName>
+      <roleName>Student</roleName>
+      <groupName>Student</groupName>
+      <groupParentPath>/Paris1</groupParentPath>
+    </membership>
+    <membership>
+      <userName>lou.cartier</userName>
+      <roleName>Student</roleName>
+      <groupName>Student</groupName>
       <groupParentPath>/Paris1</groupParentPath>
     </membership>
   </memberships>
