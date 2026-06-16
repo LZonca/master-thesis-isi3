@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "a20a247c-ec7c-47a1-a68e-011995287adf",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1781217872040,
+  "lastUpdate" : 1781611442595,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -461,7 +461,7 @@
                   },
                   "value" : {
                     "type" : "variable",
-                    "value" : "formInput.isApproved"
+                    "value" : "formInput.isThesisApproved"
                   },
                   "required" : {
                     "type" : "constant",
@@ -628,7 +628,7 @@
       "type" : "json",
       "value" : [
         "{\r",
-        "  \"isApproved\" : false\r",
+        "  \"isThesisApproved\" : false\r",
         "}"
       ],
       "exposed" : false

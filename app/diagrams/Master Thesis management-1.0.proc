@@ -12,7 +12,7 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_9kYVmF4NEfGSB_ofTbf8Ow" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_9kYVmV4NEfGSB_ofTbf8Ow" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_9kYVml4NEfGSB_ofTbf8Ow" name="" content="" returnTypeFixed="true"/>
-          <connectors xmi:type="process:Connector" xmi:id="_rIOoQGXtEfGKzoE74DdcSw" name="planTitleSubmitedNotification" definitionId="email" event="ON_FINISH" throwErrorEvent="true" definitionVersion="1.3.0">
+          <connectors xmi:type="process:Connector" xmi:id="_rIOoQGXtEfGKzoE74DdcSw" name="planTitleSubmitedNotification" definitionId="email" event="ON_FINISH" ignoreErrors="true" definitionVersion="1.3.0">
             <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_rIOoQWXtEfGKzoE74DdcSw" definitionId="email" version="1.3.0" modelVersion="9">
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_rIOoQmXtEfGKzoE74DdcSw" key="smtpHost">
                 <expression xmi:type="expression:Expression" xmi:id="_rIOoQ2XtEfGKzoE74DdcSw" name="localhost" content="localhost" returnTypeFixed="true"/>
@@ -271,8 +271,8 @@
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_FxXi8GBwEfGvnJC4xuWT6A" name="thesis" dataType="_9kYVxF4NEfGSB_ofTbf8Ow" className="hungry.hippos.model.MasterThesis"/>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_FYHVcmBwEfGvnJC4xuWT6A" name="newScript()" content="return isApproved ? &quot;Plan valide&quot; : &quot;Plan a corriger&quot;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_J9jPgGBwEfGvnJC4xuWT6A" name="isApproved" type="BOOLEAN">
-                <mapping xmi:type="process:ContractInputMapping" xmi:id="_J9jPgWBwEfGvnJC4xuWT6A"/>
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_JvGLkGlqEfGJOf8PCbz2NA" name="isApproved" type="BOOLEAN">
+                <mapping xmi:type="process:ContractInputMapping" xmi:id="_JvGLkWlqEfGJOf8PCbz2NA"/>
               </referencedElements>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_FYHVc2BwEfGvnJC4xuWT6A" type="JAVA_METHOD" expression="setStatus">
@@ -303,7 +303,7 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_iOemMl-TEfG4r5Ap2BJ86w" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_iOemMV-TEfG4r5Ap2BJ86w" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_iOemM1-TEfG4r5Ap2BJ86w" name="" content="" returnTypeFixed="true"/>
-          <connectors xmi:type="process:Connector" xmi:id="_F31l0GXrEfGKzoE74DdcSw" name="StudentPlanNotification" definitionId="email" event="ON_FINISH" throwErrorEvent="true" definitionVersion="1.3.0">
+          <connectors xmi:type="process:Connector" xmi:id="_F31l0GXrEfGKzoE74DdcSw" name="StudentPlanNotification" definitionId="email" event="ON_FINISH" ignoreErrors="true" definitionVersion="1.3.0">
             <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_F32M4GXrEfGKzoE74DdcSw" definitionId="email" version="1.3.0" modelVersion="9">
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_F32M4WXrEfGKzoE74DdcSw" key="smtpHost">
                 <expression xmi:type="expression:Expression" xmi:id="_F32M4mXrEfGKzoE74DdcSw" name="localhost" content="localhost" returnTypeFixed="true"/>
@@ -436,7 +436,7 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_BU6yYl-XEfG4r5Ap2BJ86w" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_BU6yYV-XEfG4r5Ap2BJ86w" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_BU6yY1-XEfG4r5Ap2BJ86w" name="" content="" returnTypeFixed="true"/>
-          <connectors xmi:type="process:Connector" xmi:id="_e00AwGXrEfGKzoE74DdcSw" name="thesisCommentNotification" definitionId="email" event="ON_FINISH" throwErrorEvent="true" definitionVersion="1.3.0">
+          <connectors xmi:type="process:Connector" xmi:id="_e00AwGXrEfGKzoE74DdcSw" name="thesisCommentNotification" definitionId="email" event="ON_FINISH" ignoreErrors="true" definitionVersion="1.3.0">
             <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_e00AwWXrEfGKzoE74DdcSw" definitionId="email" version="1.3.0" modelVersion="9">
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_e00AwmXrEfGKzoE74DdcSw" key="smtpHost">
                 <expression xmi:type="expression:Expression" xmi:id="_e00Aw2XrEfGKzoE74DdcSw" name="localhost" content="localhost" returnTypeFixed="true"/>
@@ -535,7 +535,7 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_pRREwl-ZEfG4r5Ap2BJ86w" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_pRREwV-ZEfG4r5Ap2BJ86w" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_pRREw1-ZEfG4r5Ap2BJ86w" name="" content="" returnTypeFixed="true"/>
-          <connectors xmi:type="process:Connector" xmi:id="_QDNYMGXsEfGKzoE74DdcSw" name="approvedReportNotification" definitionId="email" event="ON_FINISH" throwErrorEvent="true" definitionVersion="1.3.0">
+          <connectors xmi:type="process:Connector" xmi:id="_QDNYMGXsEfGKzoE74DdcSw" name="approvedReportNotification" definitionId="email" event="ON_FINISH" ignoreErrors="true" definitionVersion="1.3.0">
             <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_QDNYMWXsEfGKzoE74DdcSw" definitionId="email" version="1.3.0" modelVersion="9">
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_QDNYMmXsEfGKzoE74DdcSw" key="smtpHost">
                 <expression xmi:type="expression:Expression" xmi:id="_QDNYM2XsEfGKzoE74DdcSw" name="localhost" content="localhost" returnTypeFixed="true"/>
@@ -630,7 +630,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_W5gpQWBoEfGV6uQhRy5U3Q" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_9kYVpF4NEfGSB_ofTbf8Ow">
-        <targetForm xmi:type="expression:Expression" xmi:id="_vbR1AGXxEfGz_cXP0lJEqw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_optSUGlZEfGJOf8PCbz2NA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_9kYVpl4NEfGSB_ofTbf8Ow">
         <targetForm xmi:type="expression:Expression" xmi:id="_9kYVp14NEfGSB_ofTbf8Ow" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
