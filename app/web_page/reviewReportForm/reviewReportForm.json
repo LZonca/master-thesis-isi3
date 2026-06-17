@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "aa721204-eb18-4343-8356-de59f64cb3a0",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1781707367696,
+  "lastUpdate" : 1781723997690,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -225,7 +225,7 @@
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "Auteur: {{ studentProfile.started_by.firstname }} {{ studentProfile.started_by.lastname }}"
+                          "value" : "Author: {{ studentProfile.started_by.firstname }} {{ studentProfile.started_by.lastname }}"
                         },
                         "level" : {
                           "type" : "constant",
@@ -507,7 +507,33 @@
                         },
                         "required" : {
                           "type" : "constant",
+                          "value" : true
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
                           "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : 3
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : 255
+                        },
+                        "debounce" : {
+                          "type" : "constant",
+                          "value" : 0
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
                       "reference" : "5d6bc65a-d606-4f44-9414-261545b3e4a6",
