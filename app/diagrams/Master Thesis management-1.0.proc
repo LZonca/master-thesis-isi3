@@ -48,9 +48,9 @@
                 <expression xmi:type="expression:Expression" xmi:id="_rIOoV2XtEfGKzoE74DdcSw" content="" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_rIOoWGXtEfGKzoE74DdcSw" key="to">
-                <expression xmi:type="expression:Expression" xmi:id="_rIOoWWXtEfGKzoE74DdcSw" name="to()" content="long supervisorId = apiAccessor.getProcessAPI().getActivityInstance(activityInstanceId).executedBy&#xD;&#xA;return apiAccessor.getIdentityAPI().getUserContactData(supervisorId, false).email" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
-                  <referencedElements xmi:type="expression:Expression" xmi:id="_8MBgcGXtEfGKzoE74DdcSw" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="org.bonitasoft.engine.api.APIAccessor"/>
-                  <referencedElements xmi:type="expression:Expression" xmi:id="_8MBgcWXtEfGKzoE74DdcSw" name="activityInstanceId" content="activityInstanceId" type="TYPE_ENGINE_CONSTANT" returnType="java.lang.Long"/>
+                <expression xmi:type="expression:Expression" xmi:id="_rIOoWWXtEfGKzoE74DdcSw" name="to()" content="long supervisorId = apiAccessor.getProcessAPI().getActivityInstance(activityInstanceId).executedBy &#xD;&#xA;return apiAccessor.getIdentityAPI().getUserContactData(supervisorId, false).email" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_OFKqsGpsEfGHEqRklmuUYg" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="org.bonitasoft.engine.api.APIAccessor"/>
+                  <referencedElements xmi:type="expression:Expression" xmi:id="_OFKqsWpsEfGHEqRklmuUYg" name="activityInstanceId" content="activityInstanceId" type="TYPE_ENGINE_CONSTANT" returnType="java.lang.Long"/>
                 </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_rIOoWmXtEfGKzoE74DdcSw" key="bcc">
@@ -409,8 +409,14 @@
             <leftOperand xmi:type="expression:Expression" xmi:id="_z_73gWXnEfGKzoE74DdcSw" name="thesis" content="thesis" type="TYPE_VARIABLE" returnType="hungry.hippos.model.MasterThesis">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_1AmqUGXnEfGKzoE74DdcSw" name="thesis" dataType="_9kYVxF4NEfGSB_ofTbf8Ow" className="hungry.hippos.model.MasterThesis"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_z_73gmXnEfGKzoE74DdcSw" name="newScript()" content="return isThesisApproved ? &quot;Memoire valide&quot; : &quot;Memoire a corriger&quot;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="hungry.hippos.model.MasterThesis"/>
-            <operator xmi:type="expression:Operator" xmi:id="_z_73g2XnEfGKzoE74DdcSw" type="ASSIGNMENT"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_z_73gmXnEfGKzoE74DdcSw" name="newScript()" content="return isThesisApproved ? &quot;Memoire valide&quot; : &quot;Memoire a corriger&quot;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_W5-B0GpkEfGHEqRklmuUYg" name="isThesisApproved" type="BOOLEAN">
+                <mapping xmi:type="process:ContractInputMapping" xmi:id="_W5-B0WpkEfGHEqRklmuUYg"/>
+              </referencedElements>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_z_73g2XnEfGKzoE74DdcSw" type="JAVA_METHOD" expression="setStatus">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
           </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_rarIo1-WEfG4r5Ap2BJ86w" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_rarIpF-WEfG4r5Ap2BJ86w" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -625,7 +631,7 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_IpKRsWl_EfGVItDWvP1KHw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_IpKRsml_EfGVItDWvP1KHw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_IpKRs2l_EfGVItDWvP1KHw" name="" content="" returnTypeFixed="true"/>
-          <connectors xmi:type="process:Connector" xmi:id="_IpKRtGl_EfGVItDWvP1KHw" name="approvedReportNotification" definitionId="email" event="ON_FINISH" ignoreErrors="true" definitionVersion="1.3.0">
+          <connectors xmi:type="process:Connector" xmi:id="_IpKRtGl_EfGVItDWvP1KHw" name="approvedPlanNotification" definitionId="email" event="ON_FINISH" ignoreErrors="true" definitionVersion="1.3.0">
             <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_IpKRtWl_EfGVItDWvP1KHw" definitionId="email" version="1.3.0" modelVersion="9">
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_IpKRtml_EfGVItDWvP1KHw" key="smtpHost">
                 <expression xmi:type="expression:Expression" xmi:id="_IpKRt2l_EfGVItDWvP1KHw" name="localhost" content="localhost" returnTypeFixed="true"/>
@@ -634,7 +640,7 @@
                 <expression xmi:type="expression:Expression" xmi:id="_IpKRuWl_EfGVItDWvP1KHw" name="1025" content="1025" returnType="java.lang.Integer" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_IpKRuml_EfGVItDWvP1KHw" key="sslSupport">
-                <expression xmi:type="expression:Expression" xmi:id="_IpKRu2l_EfGVItDWvP1KHw" name="false" content="false" returnType="java.lang.Boolean"/>
+                <expression xmi:type="expression:Expression" xmi:id="_IpKRu2l_EfGVItDWvP1KHw" name="false" content="false" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_IpKRvGl_EfGVItDWvP1KHw" key="starttlsSupport">
                 <expression xmi:type="expression:Expression" xmi:id="_IpKRvWl_EfGVItDWvP1KHw" name="false" content="false" returnType="java.lang.Boolean" returnTypeFixed="true"/>
@@ -673,7 +679,7 @@
                 <expression xmi:type="expression:Expression" xmi:id="_IpKR02l_EfGVItDWvP1KHw" content="" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_IpKR1Gl_EfGVItDWvP1KHw" key="subject">
-                <expression xmi:type="expression:Expression" xmi:id="_IpKR1Wl_EfGVItDWvP1KHw" name="[Paris 1] Approbation de votre rapport de mémoire et autorisation de soutenance" content="[Paris 1] Approbation de votre rapport de mémoire et autorisation de soutenance" returnTypeFixed="true"/>
+                <expression xmi:type="expression:Expression" xmi:id="_IpKR1Wl_EfGVItDWvP1KHw" name="[Paris 1] Approbation de votre plan de mémoire" content="[Paris 1] Approbation de votre plan de mémoire" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_IpKR1ml_EfGVItDWvP1KHw" key="html">
                 <expression xmi:type="expression:Expression" xmi:id="_IpKR12l_EfGVItDWvP1KHw" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
@@ -718,7 +724,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_W5gpQWBoEfGV6uQhRy5U3Q" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_9kYVpF4NEfGSB_ofTbf8Ow">
-        <targetForm xmi:type="expression:Expression" xmi:id="_9axY8GnGEfG598tOxPm0LQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_RmA7QGpsEfGHEqRklmuUYg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_9kYVpl4NEfGSB_ofTbf8Ow">
         <targetForm xmi:type="expression:Expression" xmi:id="_9kYVp14NEfGSB_ofTbf8Ow" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>

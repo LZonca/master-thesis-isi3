@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "a20a247c-ec7c-47a1-a68e-011995287adf",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1781707295293,
+  "lastUpdate" : 1781710709134,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -156,7 +156,16 @@
         "dimension" : {
           "xs" : 12
         },
-        "propertyValues" : { },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
         "reference" : "3027b64f-ea69-4475-965c-bd5ee5ed258b",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
@@ -469,63 +478,100 @@
               {
                 "type" : "component",
                 "dimension" : {
-                  "md" : 12,
-                  "sm" : 12,
                   "xs" : 12,
-                  "lg" : 12
+                  "sm" : 12,
+                  "md" : 6,
+                  "lg" : 4
                 },
                 "propertyValues" : {
-                  "labelHidden" : {
+                  "cssClasses" : {
                     "type" : "constant",
-                    "value" : false
+                    "value" : ""
                   },
                   "hidden" : {
                     "type" : "constant",
                     "value" : false
                   },
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
                   "disabled" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "label" : {
-                    "type" : "interpolation",
-                    "value" : "Is the thesis approved"
-                  },
-                  "dimension" : {
-                    "type" : "constant",
-                    "value" : 12
-                  },
-                  "value" : {
-                    "type" : "variable",
-                    "value" : "formInput.isThesisApproved"
-                  },
-                  "required" : {
                     "type" : "constant",
                     "value" : false
                   },
                   "allowHTML" : {
                     "type" : "constant",
                     "value" : false
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Deny"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "center"
+                  },
+                  "buttonStyle" : {
+                    "type" : "constant",
+                    "value" : "danger"
+                  },
+                  "action" : {
+                    "type" : "constant",
+                    "value" : "Submit task"
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable"
+                  },
+                  "dataToSend" : {
+                    "type" : "constant",
+                    "value" : "{ \"isThesisApproved\": false }"
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable"
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "dataFromError" : {
+                    "type" : "variable"
+                  },
+                  "targetUrlOnSuccess" : {
+                    "type" : "interpolation"
+                  },
+                  "collectionToModify" : {
+                    "type" : "variable"
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "collectionPosition" : {
+                    "type" : "constant",
+                    "value" : "Last"
+                  },
+                  "valueToAdd" : {
+                    "type" : "constant"
+                  },
+                  "removeItem" : {
+                    "type" : "variable"
                   }
                 },
-                "reference" : "64cd737f-8235-4cef-bc04-438a3b6f262f",
+                "reference" : "6d4863ee-81a3-4fab-a11e-2943139038fa",
                 "hasValidationError" : false,
-                "id" : "pbCheckbox",
-                "description" : ""
-              }
-            ],
-            [
+                "id" : "pbButton"
+              },
               {
                 "type" : "component",
                 "dimension" : {
-                  "md" : 12,
+                  "md" : 6,
                   "sm" : 12,
                   "xs" : 12,
-                  "lg" : 12
+                  "lg" : 8
                 },
                 "propertyValues" : {
                   "removeItem" : {
@@ -541,15 +587,15 @@
                   },
                   "buttonStyle" : {
                     "type" : "constant",
-                    "value" : "primary"
+                    "value" : "success"
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Submit"
+                    "value" : "Accept"
                   },
                   "dataToSend" : {
                     "type" : "expression",
-                    "value" : "formOutput"
+                    "value" : "{ \"isThesisApproved\": true }"
                   },
                   "dataFromError" : {
                     "type" : "variable",
@@ -591,6 +637,27 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable"
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable"
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
                 "reference" : "001de49c-b9a9-4745-a007-9a56e174adf7",
