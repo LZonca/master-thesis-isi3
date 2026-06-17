@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "94a9d1a0-d4a7-4d7c-b388-852e765bd05c",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1781222215554,
+  "lastUpdate" : 1781706872666,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -133,6 +133,46 @@
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
+            }
+          ],
+          [
+            {
+              "type" : "component",
+              "dimension" : {
+                "xs" : 12,
+                "sm" : 12,
+                "md" : 12,
+                "lg" : 12
+              },
+              "propertyValues" : {
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "allowHTML" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "text" : {
+                  "type" : "interpolation",
+                  "value" : "Étudiant: {{ studentProfile.started_by.firstname }} {{ studentProfile.started_by.lastname }}"
+                },
+                "level" : {
+                  "type" : "constant",
+                  "value" : "Level 4"
+                },
+                "alignment" : {
+                  "type" : "constant",
+                  "value" : "center"
+                }
+              },
+              "reference" : "5391c084-b6dc-4664-a233-e42104cbd9a0",
+              "hasValidationError" : false,
+              "id" : "pbTitle"
             }
           ]
         ]
@@ -666,7 +706,7 @@
     "studentProfile" : {
       "type" : "url",
       "value" : [
-        "../API/identity/user/{{thesis.persistenceId.string}}"
+        "../API/bpm/case/{{task.caseId}}?d=started_by"
       ],
       "exposed" : false
     },

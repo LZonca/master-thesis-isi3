@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "aa721204-eb18-4343-8356-de59f64cb3a0",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1781218976153,
+  "lastUpdate" : 1781707367696,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -201,6 +201,46 @@
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "Auteur: {{ studentProfile.started_by.firstname }} {{ studentProfile.started_by.lastname }}"
+                        },
+                        "level" : {
+                          "type" : "constant",
+                          "value" : "Level 3"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "center"
+                        }
+                      },
+                      "reference" : "458cef82-cc08-4e6e-9552-e82e19fbad7b",
+                      "hasValidationError" : false,
+                      "id" : "pbTitle"
+                    }
+                  ],
                   [
                     {
                       "type" : "component",
@@ -672,6 +712,13 @@
       "type" : "urlparameter",
       "value" : [
         "id"
+      ],
+      "exposed" : false
+    },
+    "studentProfile" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/case/{{task.caseId}}?d=started_by"
       ],
       "exposed" : false
     }

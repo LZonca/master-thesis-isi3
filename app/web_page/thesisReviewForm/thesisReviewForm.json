@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "a20a247c-ec7c-47a1-a68e-011995287adf",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1781612252566,
+  "lastUpdate" : 1781707295293,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -105,6 +105,46 @@
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
+            }
+          ],
+          [
+            {
+              "type" : "component",
+              "dimension" : {
+                "xs" : 12,
+                "sm" : 12,
+                "md" : 12,
+                "lg" : 12
+              },
+              "propertyValues" : {
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "allowHTML" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "text" : {
+                  "type" : "interpolation",
+                  "value" : "Étudiant: {{ studentProfile.started_by.firstname }} {{ studentProfile.started_by.lastname }}"
+                },
+                "level" : {
+                  "type" : "constant",
+                  "value" : "Level 4"
+                },
+                "alignment" : {
+                  "type" : "constant",
+                  "value" : "center"
+                }
+              },
+              "reference" : "ccf25eff-d3b9-440e-878d-b1535ff6b162",
+              "hasValidationError" : false,
+              "id" : "pbTitle"
             }
           ]
         ]
@@ -682,6 +722,13 @@
       "type" : "url",
       "value" : [
         "../API/bpm/caseDocument?p=0&c=10&f=caseId={{task.caseId}}&f=name=thesisDocumentInput"
+      ],
+      "exposed" : false
+    },
+    "studentProfile" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/case/{{task.caseId}}?d=started_by"
       ],
       "exposed" : false
     }
